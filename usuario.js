@@ -1,9 +1,9 @@
 'use strict'
 
 class Usuario {
-  constructor(nombreApellidos, email, contraseña){
+  constructor(nombreApellidos, email, password){
       this.nombreApellidos = nombreApellidos;
       this.email = email;
-      this.contraseña = contraseña;
+      this.password = password;
   }
 }

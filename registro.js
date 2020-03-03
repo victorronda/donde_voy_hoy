@@ -1,7 +1,7 @@
 let nombreApellidos = document.getElementById("nom-apell");
 let email = document.getElementById("email");
-let contraseña = document.getElementById("contraseña");
-let repContraseña = document.getElementById("rep-contraseña");
+let password = document.getElementById("password");
+let repPassword = document.getElementById("rep-password");
 let iniSesBoton = document.getElementById("botton-ini-ses");
 let form = document.getElementsByClassName("form-regis")[0];
 let botonRegistro = document.getElementsByClassName("botton-registrar")[0];
@@ -17,13 +17,13 @@ botonRegistro.addEventListener("click", function(event){
     
     if (comprobarUsuarioValido()){
         alert ("¡Usuario registrado!")
-        crearUsuario(nombreApellidos.value, email.value, contraseña.value)
+        crearUsuario(nombreApellidos.value, email.value, password.value)
         window.location.href = 'index.html'
     };
 })
 
 function comprobarUsuarioValido () {
-    let validadorRegistro = new RegistroValidador (nombreApellidos.value, email.value, contraseña.value, repContraseña.value);
+    let validadorRegistro = new RegistroValidador (nombreApellidos.value, email.value, password.value, repPassword.value);
     
     let usuariosBD = JSON.parse(localStorage.getItem("Usuarios"));
     let usuarioValido = true;
@@ -36,12 +36,12 @@ function comprobarUsuarioValido () {
         validadorRegistro.crearError("Por favor, introduce una dirección de mail válida", email)
         usuarioValido=false
     }
-    if(!validadorRegistro.comprobarContraseña()){
-        validadorRegistro.crearError("Por favor, introduce una contraseña válida", contraseña)
+    if(!validadorRegistro.comprobarPassword()){
+        validadorRegistro.crearError("Por favor, introduce una password válida", password)
         usuarioValido=false
     }
-    if(!validadorRegistro.comprobarContraseñaRepetida()){
-        validadorRegistro.crearError("Las contraseñas no coinciden", repContraseña)
+    if(!validadorRegistro.comprobarPasswordRepetida()){
+        validadorRegistro.crearError("Las passwords no coinciden", repPassword)
         usuarioValido=false
     }
     if (!validadorRegistro.comprobarEmailEnBD(usuariosBD)){
@@ -56,8 +56,8 @@ function borrarErrores (){
     errores ? errores.forEach(error => error.remove()) : null;
 }
 
-function crearUsuario (nombreApellidos, email, contraseña) {
-    const nuevoUsuario = new Usuario (nombreApellidos, email, contraseña)
+function crearUsuario (nombreApellidos, email, password) {
+    const nuevoUsuario = new Usuario (nombreApellidos, email, password)
 
     if (usuariosBD){
         usuariosBD.push(nuevoUsuario);
@@ -70,8 +70,8 @@ function crearUsuario (nombreApellidos, email, contraseña) {
 
 /* let nom_apell = document.getElementById('nom-apell');
 let email = document.getElementById('email');
-let contraseña = document.getElementById('contraseña');
-let rep_contraseña = document.getElementById('rep-contraseña');
+let password = document.getElementById('password');
+let rep_password = document.getElementById('rep-password');
 let boton_registrar = document.querySelector('.botton-registrar')
 
 
@@ -100,22 +100,22 @@ if (email.value === undefined && (re.test(email.value))) {
 
 
 
-// Comprobación contraseña
+// Comprobación password
 
-if (contraseña.value === undefined && (contraseña.value.length < 8)) {
-    return alert ('Tu contraseña debe tener por lo menos 8 caracteres')
+if (password.value === undefined && (password.value.length < 8)) {
+    return alert ('Tu password debe tener por lo menos 8 caracteres')
 } else {
-    localStorage.setItem('Contraseña', contraseña.value)
+    localStorage.setItem('Password', password.value)
 }
 
 
 
-// Comprobación repetición contraseña
+// Comprobación repetición password
 
-if (rep_contraseña.value === undefined && (rep_contraseña.value !== contraseña.value)) {
-    return alert ('Tu contraseña debe coincidir')
+if (rep_password.value === undefined && (rep_password.value !== password.value)) {
+    return alert ('Tu password debe coincidir')
 }  else {
-    localStorage.setItem('Contraseña', undefined)
+    localStorage.setItem('Password', undefined)
 }
 
 }

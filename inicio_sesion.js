@@ -1,7 +1,7 @@
 let nombreApellidos = document.getElementById("nom-apell");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
-let repContraseña = document.getElementById("rep-contraseña");
+let repPassword = document.getElementById("rep-password");
 let iniSesBoton = document.getElementsByClassName("botton-ini-ses")[0];
 let form = document.getElementsByClassName("form-ini-ses")[0];
 let botonRegistro = document.getElementsByClassName("botton-registrar")[0];
@@ -37,7 +37,7 @@ function comprobarUsuarioValido () {
         usuarioValido=false
     }
     if(!validadorRegistro.comprobarPassword()){
-        validadorRegistro.crearError("Por favor, introduce una contraseña válida", password)
+        validadorRegistro.crearError("Por favor, introduce una password válida", password)
         usuarioValido=false
     }
     
