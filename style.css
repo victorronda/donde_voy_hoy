@@ -1,0 +1,813 @@
+@import url(//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le);
+@font-face {font-family: "Microsoft Tai Le"; src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot"); src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg"); }
+
+
+* {
+    font-family: "Microsoft Tai Le",'Arial Narrow', Arial, sans-serif;
+}
+
+
+ /* POR SI FALLA BOOTSTRAP AL HACER EL RESPONSIVE DESIGN
+ breakpoint  {
+    max-width: 100%;
+    display: inline-block;
+    }
+    /* 2 columnas para tablets *//*
+    @media (min-width: 420px) {
+        breakpoint  {
+        max-width: 48%;
+        }
+        }
+        /* 4 columnas para grandes dispositivos*//*
+        @media (min-width: 760px) {
+        breakpoint  {
+        max-width: 24%;
+        }
+        }*/
+
+
+
+
+
+
+/* RESOLUCIÓN MÓVIL INTERMEDIO (IPHONE X) */
+
+@media (max-width: 400px) {
+
+.mi-navbar{
+    width: 100%;
+    height: 100%;
+    background-color: steelblue;
+    /*background: linear-gradient(70deg, rgb(13, 155, 238)),rgb(13, 155, 238);*/
+    z-index: 20;
+    border-bottom: 5px solid lightblue;
+}  
+
+.div-header {
+    z-index: 30;
+}
+
+.logo-header {
+    width: 50%;
+    height: 20%;
+}
+
+.boton-movil {
+    z-index: 1200;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+.barritas-movil{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    background-color: blue
+}
+
+
+.icon-bar{
+    z-index: 2000;
+    background-color: #14EBDE;
+}
+#mi-dropdown {
+    z-index: 2000;
+    
+}
+
+.links-header {
+    list-style: none;
+    text-align: end;
+    padding: 7px;
+}
+
+.etiq-links {
+    color: white;
+    
+}
+
+
+.carrusel {
+    max-height: 563px;
+    background-size: cover;
+    width: 100%;
+}
+
+.info-general {
+    max-height: 563px;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.info-general {
+    background-color: lightblue;
+}
+.recuadro-grande-info {
+    border:15px solid lightblue;
+    background-color: steelblue;
+    border-radius: 25px;
+   
+}
+
+.fondo-azul-redondeado {
+    border:20px solid steelblue;
+    border-start-end-radius: 111px;
+    border-radius: 25px;
+}
+
+.filas-info {
+    color:white;
+}
+
+.filas-info h2 {
+    font-size: 12px;
+}
+
+.filas-info p {
+    font-size: 10px;
+}
+
+.icono-info {
+    font-size: 120px;
+    height: 25px;
+    width: 25px ;
+    text-align: center;
+    z-index: 30;
+}
+
+.texto-row1 {
+    margin-top:10px;
+}
+
+.circulo-icono {
+    max-width: 70px;
+    max-height: 70px;
+    justify-items: center;
+    margin-top: 12px;
+    transform: translate(-20px,-5px);
+    padding: 0px -30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    z-index: 10;
+}
+
+.icono-edificio {
+    font-size:36px; 
+    margin-top:15px; 
+    color: steelblue;
+}
+
+.row1-container {
+    margin-left: 20px;
+}
+
+.circulo-icono2 {
+    max-width: 70px;
+    max-height: 70px;
+    justify-items: center;
+    margin-top: 12px;
+    margin-right: 30px;
+    transform: translate(18px,-5px);
+    padding: 0px -40px;
+    border-radius: 50%;
+    background-color: lightblue;
+    z-index: 10;
+}
+
+.icono-avion {
+    font-size:42px; 
+    margin-top:15px; 
+    transform: translate(-2px); 
+    color: steelblue;
+}
+
+.texto-row2 {
+    margin-left: 20px;
+}
+
+.seccion-busqueda {
+    height: 135px; 
+    background-color: lightsteelblue;
+    border: 15px solid white;
+    border-radius: 25px;
+
+}
+
+.titulo-busqueda {
+    font-size: 25px;
+    text-emphasis: center;
+    position: relative;
+    justify-self: center;
+    text-align: center;
+    margin: 12px auto;
+    color: lightcoral;
+
+}
+
+#donde-voy-hoy {
+    width: 190px;
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+    transform: translate(-10px,0);
+}
+
+.botton-buscar {
+    width: 90px;
+    background-color: lightcoral;
+    transform: translate(10px,0);
+    border: 1px solid lightcoral;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2px;
+    color:white
+}
+
+.mi-footer {
+    height: 125px;
+    width: 100%;
+    background-color: #7A5E83;
+}
+
+.social-media {
+    flex-direction: column;
+    transform: translate(0,22px);
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+
+.social-links {
+    color: white;
+    font-size: 14px;
+    
+}
+.logo-fb {
+   transform: translate(-17px,0);
+}
+
+.FB {
+    margin-left: 16px;
+}
+
+.letras-FB {
+    transform: translate(11px);
+}
+
+.mi-copyright {
+    transform: translate(40px,20px);
+    color: white;
+    max-width: 300px;
+    font-size:14px;
+}
+
+.widget-sky {
+    padding:25px;
+}
+ .tit-registro {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;                
+}
+
+.centrar-todo-registro {
+    margin: 0 94px;
+}
+
+.circulo-inicio-sesion {
+    width: 55px;
+    height: 55px;
+    transform: translate(52px);
+    text-align: center;
+    border-radius: 50%;
+    background-color: lightblue;
+    float: left;
+    
+}
+
+.icono-sonriente {
+    transform: translate(0px,10px);
+    font-size:36px; 
+    margin-bottom: 15px; 
+    color: steelblue;
+}
+
+.labels-reg-log {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputs-reg-log {
+    width: 200px;
+    border: 1px solid lightcoral;
+    border-radius: 25px;
+    transform: translate(-22px,0);
+}
+
+
+.botton-registrar {
+    width: 120px;
+    background-color: lightcoral;
+    transform: translate(20px,0);
+    border: 1px solid lightcoral;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    color:white
+}
+
+.icono-risa {
+    font-size:18px; 
+    padding-top:3px; 
+    margin-bottom: 15px; 
+    color: steelblue;
+}
+
+.icono-inicio-sesion {
+    font-size:34px; 
+    transform: translate(0,-18px); 
+    color: steelblue;
+}
+
+.botton-ini-ses {
+    width: 160px;
+    background-color: lightcoral;
+    transform: translate(px,0);
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    color:white
+}
+
+.tit-ini-ses {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo_ciudad_h2 {
+    font-size: 28px;
+    margin: 25px 10px;
+}
+
+.parraf_ciudad_p {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+ .imag_ciudad_img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* RESOLUCIÓN LAPTOP NORMAL */
+
+
+
+@media (min-width: 401px) {
+
+    .mi-navbar{
+        width: 100%;
+        height: 75px;
+        background-color: steelblue;
+        z-index: 20;
+        border-bottom: 5px solid lightblue;
+    }  
+    
+    .div-header {
+        z-index: 30;
+    }
+    
+    .logo-header {
+        width: 10%;
+        height: 1%;
+    }
+    
+    
+    
+   
+    
+    .icon-bar{
+        z-index: 2000;
+        background-color: #14EBDE;
+    }
+
+    #mi-dropdown {
+        z-index: 2000;
+        
+    }
+    
+    .links-header {
+        list-style: none;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    
+    .etiq-links {
+        color: white;
+        
+    }
+    
+    
+    .carrusel {
+        max-height: 840px;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .info-general {
+        max-height: 840px;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    
+    .info-general {
+        background-color: lightblue;
+        height: 800px;
+    }
+    .recuadro-grande-info {
+        border:35px solid lightblue;
+        background-color: steelblue;
+        border-radius: 55px;
+       
+    }
+    
+    .fondo-azul-redondeado {
+        border:40px solid steelblue;
+        border-start-end-radius: 111px;
+        border-radius: 35px;
+        height: 435px;
+    }
+    
+    .filas-info {
+        color:white;
+    }
+    
+    .filas-info h2 {
+        font-size: 38px;
+        margin-left: 130px;
+    }
+    
+    .filas-info p {
+        font-size: 28px;
+        margin-left: 130px;
+        width: 300px;
+    }
+
+
+    
+    .icono-info {
+        font-size: 120px;
+        height: 25px;
+        width: 25px ;
+        text-align: center;
+        z-index: 30;
+    }
+    
+    .texto-row1 {
+        margin-top:120px;
+    }
+    
+    .circulo-icono {
+        max-width: 200px;
+        max-height: 200px;
+        justify-items: center;
+        margin-top: 110px;
+        transform: translate(100px,-5px);
+        padding: 0px -30px;
+        border-radius: 50%;
+        background-color: lightblue;
+        z-index: 10;
+    }
+
+    .icono-edificio {
+        font-size:120px; 
+        margin-top:15px; 
+        color: steelblue;
+        transform: translate(24px,23px);
+    }
+    
+    .row1-container {
+        margin-left: 20px;
+    }
+    
+    .circulo-icono2 {
+        max-width: 200px;
+        max-height: 200px;
+        justify-items: center;
+        margin-top: 12px;
+        margin-right: 30px;
+        transform: translate(0px,-5px);
+        padding: 0px -40px;
+        border-radius: 50%;
+        background-color: lightblue;
+        z-index: 10;
+    }
+
+    .icono-avion {
+        font-size:100px; 
+        margin-top:15px; 
+        transform: translate(30px,30px); 
+        color: steelblue;
+    }
+    
+    .texto-row2 {
+        margin-left: 20px;
+        transform: translate(0,-30px);
+    }
+
+    .fondo-seccion-busqueda {
+        background-image: url(img/img-fondo-busqueda.jpg);
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        height: 600px;
+    }
+    
+    .seccion-busqueda {
+        height: 340px; 
+        background-color: lightsteelblue;
+        border: 15px solid white;
+        border-radius: 25px;
+        width: 40%;
+        margin: 0 30%;
+        transform: translate(0,130px);
+    
+    }
+    
+    .titulo-busqueda {
+        font-size: 45px;
+        text-emphasis: center;
+        position: relative;
+        justify-self: center;
+        text-align: center;
+        margin: 40px auto;
+        color: lightcoral;
+    
+    }
+    
+    #donde-voy-hoy {
+        width: 100%;
+        height: 2em;
+        border: 1px solid lightcoral;
+        border-radius: 20px;
+        transform: translate(0px,0);
+    }
+    
+    .botton-buscar {
+        height: 3em;
+        width: 80%;
+        background-color: lightcoral;
+        transform: translate(33px,0);
+        border: 1px solid lightcoral;
+        border-radius: 15px;
+        text-align: center;
+        padding: 2px;
+        color:white;
+        margin-top: 40px;
+    }
+    
+    .mi-footer {
+        height: 225px;
+        width: 100%;
+        background-color: #7A5E83;
+    }
+    
+    .social-media {
+        flex-direction: column;
+        transform: translate(70px,22px);
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    
+    
+    .social-links {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        transform: translate(-65px,0);
+    }
+
+    .iconos-social {
+        color:white;
+        font-size: 35px;
+        transform: translate(0,8px);
+
+    }
+    .logo-fb {
+       transform: translate(-75px,7px);
+    }
+    
+    .FB {
+        margin-left: 75px;
+    }
+    
+    .mi-copyright {
+        transform: translate(500px,70px);
+        color: white;
+        max-width: 300px;
+        font-size:20px;
+    }
+
+    .tit-ini-ses {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .titulo_ciudad_h2 {
+        font-size: 28px;
+        margin: 35px 25px;
+    }
+    
+    .parraf_ciudad_p {
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    
+     .imag_ciudad_img {
+        width: 100%;
+        height: 100%;
+        
+
+    }
+
+
+
+    
+    .widget-sky {
+        padding:75px;
+    }
+
+    
+
+    .seccion-registro {
+        height: 650px;
+        width: 100%;
+    }
+
+
+    
+     .tit-registro {
+        font-size: 34px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transform: translate(px);                
+    }
+
+    .form-registro {
+        width: 10px;
+    }
+    
+    .centrar-todo-registro {
+        align-items: center;
+        justify-content: center;
+        
+        
+      
+    }
+    
+    .circulo-icono-reg {
+        width: 155px;
+        height: 155px;
+        transform: translate(225px);
+        text-align: center;
+        border-radius: 50%;
+        background-color: lightblue;
+        float: left;
+        
+    }
+    
+    .icono-sonriente {
+        transform: translate(0px,28px);
+        font-size:100px; 
+        margin-bottom: 15px; 
+        color: steelblue;
+
+    }
+    
+    .labels-reg-log {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+        transform: translate(-px);
+    }
+    
+    .inputs-reg-log {
+        width: 500px;
+        border: 1px solid lightcoral;
+        border-radius: 25px;
+        transform: translate(55px,0);
+    }
+    
+    
+    .botton-registrar {
+        width: 500px;
+        background-color: lightcoral;
+        transform: translate(55px,0);
+        border: 1px solid lightcoral;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        align-items: center;
+        padding: 7px;
+        color:white
+    }
+
+    .form-inicio-sesion{
+        height: 560px;
+
+    }
+
+
+    .icono-risa {
+        font-size: 50px; 
+        padding-top; 
+        margin-bottom: 15px; 
+        color: steelblue;
+        transform: translate(10px,0px); 
+    }
+
+
+    .icono-inicio-sesion {
+        font-size: 80px; 
+        transform: translate(-10px,50px); 
+        color: steelblue;
+    }
+
+    .circulo-inicio-sesion {
+        width: 155px;
+        height: 155px;
+        transform: translate(532px);
+        text-align: center;
+        border-radius: 50%;
+        background-color: lightblue;
+        float: left;
+        
+    }
+
+    .label-ini-ses {
+        transform: translate(-5px);
+
+    }
+
+    .input-ini-ses {
+        transform: translate(362px);
+    }
+
+    .botton-ini-ses {
+        width: 500px;
+        background-color: lightcoral;
+        transform: translate(362px,25px);
+        border: 1px solid lightcoral;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        color:white
+    }
+    
+    .tit-ini-ses {
+        font-size: 34px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+}
