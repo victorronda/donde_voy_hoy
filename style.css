@@ -279,6 +279,17 @@
     margin: 0 94px;
 }
 
+.circulo-icono-reg {
+    width: 55px;
+    height: 55px;
+    transform: translate(52px);
+    text-align: center;
+    border-radius: 50%;
+    background-color: lightblue;
+    float: left;
+    
+}
+
 .circulo-inicio-sesion {
     width: 55px;
     height: 55px;
@@ -684,19 +695,17 @@
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
-        transform: translate(px);                
+        transform: translate(-320px);                
     }
 
     .form-registro {
         width: 10px;
+        margin-left: 600px;
     }
     
     .centrar-todo-registro {
         align-items: center;
         justify-content: center;
-        
-        
-      
     }
     
     .circulo-icono-reg {
@@ -723,7 +732,7 @@
         width: 100%;
         margin-top: 10px;
         font-size: 20px;
-        transform: translate(-px);
+        transform: translate(-309px);
     }
     
     .inputs-reg-log {
