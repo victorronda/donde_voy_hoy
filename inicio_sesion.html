@@ -12,7 +12,6 @@
   <body>
       
     <header>
-
         <nav class="navbar navbar-default navbar-fixed-top mi-navbar">
             <div class="container-fluid div-header">
                 <img class="logo-header" src="img/logo/small_logo.png">
@@ -35,69 +34,47 @@
             </div>               
         </nav>        
     </header>
-    <section class="seccion-ini-sesion">
-      <div class="container-fluid flex-column">
-          <div class="row justify-content-center text-align-center">
-              <div class="col-12 justify-content-center text-align-center justify-items-center form-inicio-sesion">
-                  <h1 class="tit-ini-ses">Quiero entrar en mi sesión</h1>
-                  <div class="centrar-todo-registro">
-                      <span class="circulo-inicio-sesion">
-                        <i class="fas fa-laugh icono-risa"></i>
-                        <i class="fas fa-sign-in-alt icono-inicio-sesion"></i>
-                      </span>
-                      <form class="form-ini-ses" action="">
-                          <label class="labels-reg-log label-ini-ses" for="nom-apell">Nombre y apellidos</label><br>
-                          <input class="inputs-reg-log input-ini-ses" type="text" id="nom-apell" name="nom-apell" value=""><br>
-                          <label class="labels-reg-log label-ini-ses" for="email">Email</label><br>
-                          <input class="inputs-reg-log input-ini-ses" type="email" id="email" name="email" value=""><br>
-                          <label class="labels-reg-log label-ini-ses" for="password">Password</label><br>
-                          <input class="inputs-reg-log input-ini-ses" type="password" id="password" name="password" value=""><br>                      
-                       <button class="botton-ini-ses" type="submit">INICIAR SESIÓN</button>
-                      </form> 
-                  </div>
-              </div>
-          </div>
+    <section>
+      <div class="container-fluid">
+        <div class="d-flex flex-column justify-content-center text-center justify-items-center">
+          <h1 class="tit-ini-ses">Quiero entrar en mi sesión</h1>
 
+              <span class="circulo-inicio-sesion">
+                <i class="fas fa-laugh icono-risa"></i>
+                <i class="fas fa-sign-in-alt icono-inicio-sesion"></i>
+              </span>
+              <form class="form-login" action="">
+                  <label for="nom-apell">Nombre y apellidos</label><br>
+                  <input type="text" id="nom-apell" name="nom-apell" value=""><br>
+                  <label for="email">Email</label><br>
+                  <input type="email" id="email" name="email" value=""><br>
+                  <label for="password">Password</label><br>
+                  <input type="password" id="password" name="password" value=""><br>
+               <button id="login" type="submit">INICIAR SESIÓN</button>
+              </form>
 
+         </div>
       </div>
-
-
-
   </section>
-
-
-
-
-
-
-
-
-
-    
 
   <footer class="mi-footer">
     <div class="container-fluid ">
-      <div class="row justify-content-between">
-        <div class="col-6 d-flex flex-column social-media">
-          <div class="row">
-            <a class="fab fa-twitter col-4 iconos-social"></a><a class="social-links" href="https://www.twitter.es">Twitter</a>
-          </div>
-          <div class="row"> 
-            <a class="fab fa-instagram col-4 iconos-social"></a><a class="social-links" href="https://www.instagram.es">Instagram</a>
-          
-          <div class="row FB">   
-            <a class="logo-fb fab fa-facebook col-4 iconos-social"></a><a class="social-links letras-FB" href="https://www.facebook.es">Facebook</a>
-          </div>  
+      <div class="row py-4 justify-content-center text-center align-items-center  text-light">
+     
+        <div class="col-md-4 social-media">
+          <a class="fab fa-twitter"></a><a class="social-links px-4" href="https://www.twitter.es">Twitter</a> <br>
+          <a class="fab fa-instagram  "></a><a class="social-links" href="https://www.instagram.es">Instagram</a><br>
+          <a class="fab fa-facebook  "></a><a class="social-links" href="https://www.facebook.es">Facebook</a>
         </div>
-        <div class="col-6  d-flex text-align-center mi-copyright" >
-            <i class="fa fa-copyright mr-1"></i><p>Víctor Ronda</p>
+
+        <div class="col-md-4 ">
+          <i class="fa fa-copyright d-inline"></i>
+          <p class="d-inline">Víctor Ronda</p>
         </div>
-  
       </div>
     </div>
+    </div>
   </footer>
-
-
 
         <script src="validador.js"></script>
         <script src="usuario.js"></script>

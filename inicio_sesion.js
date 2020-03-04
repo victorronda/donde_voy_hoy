@@ -2,8 +2,8 @@ let nombreApellidos = document.getElementById("nom-apell");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let repPassword = document.getElementById("rep-password");
-let iniSesBoton = document.getElementsByClassName("botton-ini-ses")[0];
-let form = document.getElementsByClassName("form-ini-ses")[0];
+let iniSesBoton = document.getElementById("login");
+let form = document.getElementsByTagName("form")[0];
 let botonRegistro = document.getElementsByClassName("botton-registrar")[0];
 
 //let formWrapper = document.getElementsByClassName("form-wrapper")[0];
@@ -54,3 +54,4 @@ function borrarErrores (){
     let errores = [...document.getElementsByClassName("error")]
     errores ? errores.forEach(error => error.remove()) : null;
 }
+

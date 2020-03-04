@@ -27,9 +27,6 @@
 
 
 
-
-
-
 /* RESOLUCIÓN MÓVIL INTERMEDIO (IPHONE X) */
 
 @media (max-width: 400px) {
@@ -59,14 +56,12 @@
     height: 40px;
 }
 
-
 .barritas-movil{
     width: 100%;
     height: 100%;
     font-size: 40px;
     background-color: blue
 }
-
 
 .icon-bar{
     z-index: 2000;
@@ -88,7 +83,6 @@
     
 }
 
-
 .carrusel {
     max-height: 563px;
     background-size: cover;
@@ -109,7 +103,6 @@
     border:15px solid lightblue;
     background-color: steelblue;
     border-radius: 25px;
-   
 }
 
 .fondo-azul-redondeado {
@@ -204,7 +197,6 @@
     text-align: center;
     margin: 12px auto;
     color: lightcoral;
-
 }
 
 #donde-voy-hoy {
@@ -287,18 +279,17 @@
     border-radius: 50%;
     background-color: lightblue;
     float: left;
-    
 }
 
 .circulo-inicio-sesion {
     width: 55px;
     height: 55px;
-    transform: translate(52px);
+    /*transform: translate(52px);*/
     text-align: center;
     border-radius: 50%;
     background-color: lightblue;
-    float: left;
-    
+   /* float: left;*/
+    margin: auto;
 }
 
 .icono-sonriente {
@@ -351,7 +342,7 @@
 .botton-ini-ses {
     width: 160px;
     background-color: lightcoral;
-    transform: translate(px,0);
+    /*transform: translate(px,0);*/
     border: 1px solid lightcoral;
     border-radius: 20px;
     text-align: center;
@@ -389,15 +380,7 @@
 }
 
 
-
-
-
-
-
-
-
 /* RESOLUCIÓN LAPTOP NORMAL */
-
 
 
 @media (min-width: 401px) {
@@ -419,10 +402,7 @@
         height: 1%;
     }
     
-    
-    
-   
-    
+
     .icon-bar{
         z-index: 2000;
         background-color: #14EBDE;
@@ -445,8 +425,7 @@
         color: white;
         
     }
-    
-    
+
     .carrusel {
         max-height: 840px;
         background-size: cover;
@@ -458,8 +437,7 @@
         background-size: cover;
         width: 100%;
     }
-    
-    
+
     .info-general {
         background-color: lightblue;
         height: 800px;
@@ -468,7 +446,6 @@
         border:35px solid lightblue;
         background-color: steelblue;
         border-radius: 55px;
-       
     }
     
     .fondo-azul-redondeado {
@@ -493,8 +470,6 @@
         width: 300px;
     }
 
-
-    
     .icono-info {
         font-size: 120px;
         height: 25px;
@@ -537,7 +512,7 @@
         margin-top: 12px;
         margin-right: 30px;
         transform: translate(0px,-5px);
-        padding: 0px -40px;
+        padding: 0 -40px;
         border-radius: 50%;
         background-color: lightblue;
         z-index: 10;
@@ -618,7 +593,6 @@
         justify-content: left;
         justify-items: baseline;
         flex-wrap: wrap;
-       
     }
     
     
@@ -673,33 +647,24 @@
      .imag_ciudad_img {
         width: 100%;
         height: 100%;
-        
-
     }
 
-
-
-    
     .widget-sky {
         padding:75px;
     }
-
-    
 
     .seccion-registro {
         max-height: 100%;
         width: 100%;
     }
 
-
-    
      .tit-registro {
         font-size: 34px;
         text-align: center;
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
-        transform: translate(-320px);                
+                      
     }
 
     .form-registro {
@@ -716,11 +681,11 @@
     .circulo-icono-reg {
         width: 155px;
         height: 155px;
-        transform: translate(225px);
+        margin: 15px auto;
         text-align: center;
         border-radius: 50%;
         background-color: lightblue;
-        float: left;
+       
         
     }
     
@@ -736,7 +701,7 @@
         text-align: center;
         width: 100%;
         margin-top: 10px;
-        
+
         font-size: 20px;
         transform: translate(-309px);
     }
@@ -797,17 +762,17 @@
     .circulo-inicio-sesion {
         width: 155px;
         height: 155px;
-        transform: translate(532px);
+        /*transform: translate(532px);*/
         text-align: center;
         border-radius: 50%;
         background-color: lightblue;
-        float: left;
-        
+        /*float: left;*/
+        margin: 15px auto;
     }
 
     .label-ini-ses {
         margin-left: 300px;
-        
+
 
     }
 
@@ -838,12 +803,88 @@
         margin-top: 20px;
     }
 
-
-    .error {
+    /*.error {
         margin-left: 55px;
         max-width: 100%;
+    }*/
+
+}
+
+
+/*Ajustes*/
+.form-login > label {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.form-login > input{
+    width: 500px;
+    border: 1px solid lightcoral;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.form-login > button {
+    width: 500px;
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 5px 0;
+    color: white;
+}
+
+@media (max-width: 550px) {
+    .form-login > input,
+    .form-login > button{
+        width: 100%;
     }
 
+    .form-login > label{
+        font-size: 18px;
+    }
+}
 
+
+
+.form-signup > label {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.form-signup > input{
+    width: 500px;
+    border: 1px solid lightcoral;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.form-signup > button {
+    width: 500px;
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 5px 0;
+    color: white;
+}
+
+@media (max-width: 550px) {
+    .form-signup > input,
+    .form-signup > button{
+        width: 100%;
+    }
+
+    .form-signup > label{
+        font-size: 18px;
+    }
 
 }
