@@ -8,6 +8,7 @@ class Validador {
     }
 
     comprobarNombreApellidos () {
+        
         return this.nombreApellidos ? true : false
     }
 

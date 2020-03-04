@@ -683,7 +683,7 @@
     
 
     .seccion-registro {
-        height: 650px;
+        max-height: 100%;
         width: 100%;
     }
 
@@ -701,6 +701,7 @@
     .form-registro {
         width: 10px;
         margin-left: 600px;
+        
     }
     
     .centrar-todo-registro {
@@ -731,6 +732,7 @@
         text-align: center;
         width: 100%;
         margin-top: 10px;
+        
         font-size: 20px;
         transform: translate(-309px);
     }
@@ -739,7 +741,8 @@
         width: 500px;
         border: 1px solid lightcoral;
         border-radius: 25px;
-        transform: translate(55px,0);
+        /*transform: translate(55px,0);*/
+        margin-left: 55px;
     }
     
     
@@ -751,15 +754,25 @@
         border-radius: 15px;
         text-align: center;
         margin-top: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
         align-items: center;
         padding: 7px;
         color:white
     }
 
-    .form-inicio-sesion{
-        height: 560px;
+    .seccion-ini-sesion {
+        max-height: 100%;
+        max-width: 100%;
+    }
 
+    .form-inicio-sesion{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .form-ini-ses {
+        max-height: 100%;
+        max-width: 100%;
     }
 
 
@@ -795,7 +808,7 @@
     }
 
     .input-ini-ses {
-        transform: translate(362px);
+        margin-left: 362px;
     }
 
     .botton-ini-ses {
@@ -806,9 +819,11 @@
         border-radius: 20px;
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 60px;
         padding-top: 5px;
-        color:white
+        color:white;
+        max-height: 100%;
+
     }
     
     .tit-ini-ses {
@@ -817,6 +832,12 @@
         text-align: center;
         margin-top: 20px;
     }
+
+
+    .error {
+        margin-left: 55px;
+    }
+
 
 
 }
