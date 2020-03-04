@@ -28,7 +28,7 @@ function comprobarUsuarioValido () {
     let usuarioValido = true;
 
     if(!validadorRegistro.comprobarNombreApellidos()){
-        console.log('entra en el usuario no valido')
+        
         validadorRegistro.crearError("Por favor, introduce un nombre válido", nombreApellidos)
         usuarioValido=false
     }
@@ -41,10 +41,10 @@ function comprobarUsuarioValido () {
         usuarioValido=false
     }
     
-    if (!validadorRegistro.comprobarEmailEnBD(email.value)){
+    /* if (!validadorRegistro.comprobarEmailEnBD(email.value)){
         validadorRegistro.crearError("Este mail no existe", email)
         usuarioValido=false
-    }
+    } */
 
     return usuarioValido
 }

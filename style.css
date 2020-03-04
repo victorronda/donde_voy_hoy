@@ -607,16 +607,18 @@
     }
     
     .mi-footer {
-        height: 225px;
-        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
         background-color: #7A5E83;
     }
     
     .social-media {
         flex-direction: column;
-        transform: translate(70px,22px);
+        margin-top: .1%;
         justify-content: left;
+        justify-items: baseline;
         flex-wrap: wrap;
+       
     }
     
     
@@ -642,7 +644,9 @@
     }
     
     .mi-copyright {
-        transform: translate(500px,70px);
+        
+        margin-left:500px;
+        margin-top: 80px;
         color: white;
         max-width: 300px;
         font-size:20px;
@@ -741,7 +745,6 @@
         width: 500px;
         border: 1px solid lightcoral;
         border-radius: 25px;
-        /*transform: translate(55px,0);*/
         margin-left: 55px;
     }
     
@@ -803,12 +806,14 @@
     }
 
     .label-ini-ses {
-        transform: translate(-5px);
+        margin-left: 300px;
+        
 
     }
 
     .input-ini-ses {
         margin-left: 362px;
+       
     }
 
     .botton-ini-ses {
@@ -836,6 +841,7 @@
 
     .error {
         margin-left: 55px;
+        max-width: 100%;
     }
 
 
