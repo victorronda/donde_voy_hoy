@@ -378,7 +378,7 @@
 /* RESOLUCIÓN LAPTOP NORMAL */
 
 
-
+@media (min-width: 501px) {
 
 .mi-navbar{
     width: 100%;
@@ -790,6 +790,8 @@
         text-align: center;
         margin-top: 20px;
     }
+
+}
 
     /*.error {
         margin-left: 55px;
