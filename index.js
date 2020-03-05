@@ -27,19 +27,4 @@ let car_mov = document.querySelectorAll('.car-mov');
 
 
 
-if(window.screen.availWidth <= 400) {
 
-car_lap.classList="d-none";
-car_mov.classList.remove('d-none')
-
-
-}
-
-if(window.screen.availWidth >= 401) {
-    
-    car_mov.classList="d-none";
-    car_lap.classList.remove('d-none')
-    
-    
-
-}

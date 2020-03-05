@@ -13,50 +13,111 @@
       
     <header>
 
-        <nav class="navbar navbar-default navbar-fixed-top mi-navbar">
-            <div class="container-fluid div-header">
-                <img class="logo-header" src="img/logo/small_logo.png">
+      <nav class="navbar navbar-default navbar-expand-sm fixed-top mi-navbar">
+          <div class="container-fluid div-header">
+              <img class="logo-header" src="img/logo/small_logo.png" alt="logo">
 
-              <!--INICIO PRUEBA LAPTOP-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi-dropdown" aria-controls="mi-dropdown" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
               
-                <ul class="nav navbar-nav d-none">
-                    <li class="links-header"><a class="etiq-links" href="index.html">¿Dónde voy hoy?</a></li>
-                    <li class="links-header"><a class="etiq-links" href="registro.html">Registrarse</a></li>
-                    <li class="links-header"><a class="etiq-links" href="inicio_sesion.html">Iniciar sesión</a></li>
-                </ul>
-                 
+              <div class="navbar-collapse collapse show" id="mi-dropdown">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active links-header"><a class="nav-link etiq-links" href="./index.html">¿Dónde voy hoy?</a></li>
+                      <li class="nav-item links-header"><a class="nav-link etiq-links" href="./registro.html">Registrarse</a></li>
+                      <li class="nav-item links-header"><a class="nav-link etiq-links" href="./inicio_sesion.html">Iniciar sesión</a></li>
+                  </ul>
+              </div>         
+          </div>               
+      </nav>        
+  </header>
+  <section>
+  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop1.jpg" media="(min-width: 501px)">  
+                <img srcset="img/imagenes_carrusel/img-movil1.jpg" alt="carousel_photo" class="d-block img-fluid">
+              </picture>
+            </div>
 
-              <!--FIN PRUEBA LAPTOP-->
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mi-dropdown">
-                 
-                  <i class="fa fa-bars" style="font-size:36px; color: lightblue;"></i>
-                  <span class="icon-bar"></span>
-                 
-                </button>
+            <div class="carousel-item">
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop2.jpg" media="(min-width: 501px)"> 
+                <img srcset="img/imagenes_carrusel/img-movil2.jpg" alt="carousel_photo" class="d-block img-fluid">
+              </picture> 
+            </div>     
 
+            <div class="carousel-item">
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop3.jpg" media="(min-width: 501px)"> 
+                <img srcset="img/imagenes_carrusel/img-movil3.jpg" alt="carousel_photo" class="d-block img-fluid">             
+              </picture>  
+            </div>
 
-                <div class="collapse navbar-collapse" id="mi-dropdown">
-                    <ul class="nav navbar-nav">
-                        <li class="links-header"><a class="etiq-links" href="index.html">¿Dónde voy hoy?</a></li>
-                        <li class="links-header"><a class="etiq-links" href="registro.html">Registrarse</a></li>
-                        <li class="links-header"><a class="etiq-links" href="inicio_sesion.html">Iniciar sesión</a></li>
-                    </ul>
-                </div>         
+            <div class="carousel-item"></div>
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop4.jpg" media="(min-width: 501px)"> 
+                <img srcset="img/imagenes_carrusel/img-movil4.jpg" alt="carousel_photo" class="d-block img-fluid">              
+              </picture>  
             </div> 
 
-        </nav>        
-    </header>
+            <div class="carousel-item"></div>
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop5.jpg" media="(min-width: 501px)"> 
+                <img srcset="img/imagenes_carrusel/img-movil5.jpg" alt="carousel_photo" class="d-block img-fluid">                
+              </picture>  
+            </div> 
+
+            <div class="carousel-item"></div>
+              <picture>
+                <source srcset="img/imagenes_carrusel/img-laptop6.jpg" media="(min-width: 501px)"> 
+                <img srcset="img/imagenes_carrusel/img-movil6.jpg" alt="carousel_photo" class="d-block img-fluid">               
+              </picture> 
+            </div> 
+                
+                  
+                    
+                      
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
 
   
 
 <!--Sección del carrusel-->
-
-    <section>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner carrusel">
-
-        <!--Imágenes de carrusel de resolución para móvil-->
-
+<!-- 
+<section>
+  
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner carrusel">
+      -->
+          <!--Imágenes de carrusel de resolución para móvil-->
+            <!--
+         <picture>
           <div class="carousel-item active car-mov">
             <img src="img/imagenes_carrusel/img-movil1.jpg" class="d-block w-100" alt="Imagen Big Ben">
           </div>
@@ -75,7 +136,7 @@
           <div class="carousel-item car-mov">
             <img src="img/imagenes_carrusel/img-movil6.jpg"  class="d-block w-100" alt="Imagen Maldivas">
           </div>
-
+        -->
 <!--Imágenes de carrusel de resolución para laptop--> 
 <!--
           <div class="carousel-item car-lap">
@@ -96,9 +157,10 @@
           <div class="carousel-item car-lap">
             <img src="./img/Imagenes carrusel/img-laptop6.jpg"  class="d-block w-100" alt="Imagen Maldivas">
           </div>
+        </picture> 
 -->
 
-
+<!--
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -109,8 +171,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-    </section>
+-->
+    
 
   <!--Sección con información de la página-->
     <section class="info-general">

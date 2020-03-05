@@ -1,9 +1,15 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('donde-voy-hoy');
 
+const myDropdown = document.getElementById('mi-dropdown')
 
 
 
+/* if(window.screen.availWidth >= 501 && window.screen.availWidth < 576) {
+myDropdown.setAttribute('class','show')
+    
+
+} */
 
 
 
