@@ -142,9 +142,7 @@
     color: steelblue;
 }
 
-.row1-container {
-    margin-left: 20px;
-}
+
 
 .circulo-icono2 {
     max-width: 70px;
@@ -247,13 +245,16 @@
 .widget-sky {
     padding:25px;
 }
+
+
+
  .tit-registro {
     font-size: 30px;
     text-align: center;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 0;                
+    padding: 15%;                
 }
 
 .centrar-todo-registro {
@@ -263,7 +264,6 @@
 .circulo-icono-reg {
     width: 55px;
     height: 55px;
-    transform: translate(52px);
     text-align: center;
     border-radius: 50%;
     background-color: lightblue;
@@ -305,7 +305,6 @@
 .botton-registrar {
     width: 120px;
     background-color: lightcoral;
-    transform: translate(20px,0);
     border: 1px solid lightcoral;
     border-radius: 15px;
     text-align: center;
@@ -379,22 +378,19 @@
 /* RESOLUCIÓN LAPTOP NORMAL */
 
 
-@media (min-width: 501px) {
-    .carousel-item .img-fluid {
-        width:100%;
-      }
-    
 
-    .mi-navbar{
-        width: 100%;
-        height: 75px;
-        background-color: steelblue;
-        
-        border-bottom: 5px solid lightblue;
-        position: fixed;
-    }  
+
+.mi-navbar{
+    width: 100%;
+    height: 75px;
+    background-color: steelblue;
     
-    
+    border-bottom: 5px solid lightblue;
+    position: fixed;
+}  
+
+
+
     
     .logo-header {
         width: 10%;
@@ -439,7 +435,7 @@
 
     .info-general {
         background-color: lightblue;
-        height: 800px;
+        max-height: 100%x;
     }
     .recuadro-grande-info {
         border:35px solid lightblue;
@@ -449,9 +445,9 @@
     
     .fondo-azul-redondeado {
         border:40px solid steelblue;
-        border-start-end-radius: 111px;
+        
         border-radius: 35px;
-        height: 435px;
+        
     }
     
     .filas-info {
@@ -497,9 +493,7 @@
         
     }
     
-    .row1-container {
-        margin-left: 20px;
-    }
+
     
     .circulo-icono2 {
         width: 200px;
@@ -526,9 +520,9 @@
     .fondo-seccion-busqueda {
         background-image: url(img/img-fondo-busqueda.jpg);
         margin: 0;
-        padding: 0;
+        padding: 15%;
         background-size: cover;
-        height: 600px;
+        max-height: 100%;
     }
     
     .seccion-busqueda {
@@ -538,8 +532,7 @@
         border-radius: 25px;
         width: 40%;
         margin: 0 30%;
-        transform: translate(0,130px);
-    
+        
     }
     
     .titulo-busqueda {
@@ -649,6 +642,7 @@
     .seccion-registro {
         max-height: 100%;
         width: 100%;
+        padding-top: 80px;
     }
 
      .tit-registro {
@@ -724,6 +718,7 @@
     .seccion-ini-sesion {
         max-height: 100%;
         max-width: 100%;
+        padding-top: 80px;
     }
 
     .form-inicio-sesion{
@@ -881,3 +876,9 @@
     }
 
 }
+
+
+@media (min-width: 501px) {
+    .carousel-item .img-fluid {
+        width:100%;
+      }
