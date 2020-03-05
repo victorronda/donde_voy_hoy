@@ -29,11 +29,11 @@ function comprobarUsuarioValido () {
 
     if(!validadorRegistro.comprobarNombreApellidos()){
         
-        validadorRegistro.crearError("Por favor, introduce un nombre válido", nombreApellidos)
+        validadorRegistro.crearError("El nombre que has introducido no está registrado", nombreApellidos)
         usuarioValido=false
     }
     if(!validadorRegistro.comprobarEmail()){
-        validadorRegistro.crearError("Por favor, introduce una dirección de mail válida", email)
+        validadorRegistro.crearError("Por favor, introduce una dirección de mail válida.", email)
         usuarioValido=false
     }
     if(!validadorRegistro.comprobarPassword()){
