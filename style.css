@@ -460,13 +460,12 @@
     
     .filas-info h2 {
         font-size: 38px;
-        margin-left: 130px;
+        
     }
     
     .filas-info p {
         font-size: 28px;
-        margin-left: 130px;
-        width: 300px;
+        
     }
 
     .icono-info {
@@ -505,13 +504,12 @@
     }
     
     .circulo-icono2 {
-        max-width: 200px;
-        max-height: 200px;
+        width: 200px;
+        height: 200px;
         justify-items: center;
         margin-top: 12px;
         margin-right: 30px;
-        transform: translate(0px,-5px);
-        padding: 0 -40px;
+        float: left;
         border-radius: 50%;
         background-color: lightblue;
         z-index: 10;
@@ -519,8 +517,8 @@
 
     .icono-avion {
         font-size:100px; 
-        margin-top:15px; 
-        transform: translate(30px,30px); 
+        margin:25%;
+        
         color: steelblue;
     }
     
