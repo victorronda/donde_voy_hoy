@@ -3,7 +3,7 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let repPassword = document.getElementById("rep-password");
 let iniSesBoton = document.getElementById("botton-ini-ses");
-let form = document.getElementsByClassName("form-regis")[0];
+let form = document.getElementsByClassName("form-signup")[0];
 let botonRegistro = document.getElementsByClassName("botton-registrar")[0];
 
 //let formWrapper = document.getElementsByClassName("form-wrapper")[0];
