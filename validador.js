@@ -75,22 +75,6 @@ class InicioSesionValidador extends Validador {
         super(nombreApellidos, email, password);
     } */
 
-    comprobarNombreApellidos (string){
-        let usuarioExiste = false;
-
-        if (!usuariosBD){
-            return false
-        }
-        else{
-            usuariosBD.forEach(user => {
-                if (user.nombreApellidos === string){usuarioExiste = true}
-            })
-        }
-        return usuarioExiste
-    }
-
-
-
     comprobarEmailEnBD (string){
         let usuarioExiste = false;
 

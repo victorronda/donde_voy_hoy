@@ -85,4 +85,4 @@ Task definition in order of priority
 ### Slides ###
 
 [googleslides] (https://docs.google.com/presentation/d/1pNUK8AiMATG2hmpob0byVkw0SdRX2A1rtqwVaovwyZI/edit?usp=sharing)
-URls for the project presentation (slides) Link Slides.com
+
