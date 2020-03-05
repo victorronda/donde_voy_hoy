@@ -125,12 +125,11 @@
 }
 
 .circulo-icono {
-    max-width: 70px;
-    max-height: 70px;
+    width: 70px;
+    height: 70px;
     justify-items: center;
-    margin-top: 12px;
-    transform: translate(-20px,-5px);
-    padding: 0px -30px;
+    margin-bottom: 12px;
+    float: left;
     border-radius: 50%;
     background-color: lightblue;
     z-index: 10;
@@ -138,20 +137,18 @@
 
 .icono-edificio {
     font-size:36px; 
-    margin-top:15px; 
+    margin: 25%;
     color: steelblue;
 }
 
 
 
 .circulo-icono2 {
-    max-width: 70px;
-    max-height: 70px;
+    width: 70px;
+    height: 70px;
     justify-items: center;
-    margin-top: 12px;
-    margin-right: 30px;
-    transform: translate(18px,-5px);
-    padding: 0px -40px;
+    margin-bottom: 12px;
+    float: left;
     border-radius: 50%;
     background-color: lightblue;
     z-index: 10;
@@ -159,8 +156,7 @@
 
 .icono-avion {
     font-size:42px; 
-    margin-top:15px; 
-    transform: translate(-2px); 
+    margin: 25%; 
     color: steelblue;
 }
 
