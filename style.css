@@ -145,7 +145,7 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 0;                
+    padding-top: 70px;                
 }
 
 .centrar-todo-registro {
@@ -155,11 +155,11 @@
 .circulo-icono-reg {
     width: 55px;
     height: 55px;
-    transform: translate(52px);
     text-align: center;
     border-radius: 50%;
     background-color: lightblue;
     float: left;
+    margin: auto;
 }
 
 .circulo-inicio-sesion {
@@ -234,10 +234,10 @@
 }
 
 .tit-ini-ses {
-    font-size: 20px;
+    font-size: 26px;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 80px;
 }
 
 .titulo_ciudad_h2 {
@@ -388,7 +388,7 @@
         font-size: 20px;
         width: 100%;
         text-align: center;
-        margin-top: 10px;
+        padding-top: 100px;
     }
     
     .titulo_ciudad_h2 {
@@ -420,7 +420,7 @@
         font-size: 34px;
         text-align: center;
         width: 100%;
-        margin-top: 10px;
+        padding-top: 100px;
         margin-bottom: 10px;
                       
     }
