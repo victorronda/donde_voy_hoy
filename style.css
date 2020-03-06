@@ -197,7 +197,6 @@
 .botton-registrar {
     width: 120px;
     background-color: lightcoral;
-    transform: translate(20px,0);
     border: 1px solid lightcoral;
     border-radius: 15px;
     text-align: center;
